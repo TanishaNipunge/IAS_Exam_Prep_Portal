@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.example.security.iasportal.model.User;
 
-
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    Optional<User> findByUsername(String username);  // ✅ Correct method
+    Optional<User> findByUsername(String username);
 }
